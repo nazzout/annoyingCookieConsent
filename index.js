@@ -1,5 +1,3 @@
-
-document.addEventListener('DOMContentLoaded', function() {
 const modal = document.getElementById('modal');
 const modalCloseBtn = document.getElementById('modal-close-btn');
 const modalText = document.getElementById('modal-text');
@@ -8,7 +6,7 @@ const declineBtn = document.getElementById('decline-btn');
 
 setTimeout(function() {
     modal.style.display = 'inline';
-    }, 1500);
+    }, 2000);
 
     modalCloseBtn.addEventListener('click', function() {
         modal.style.display = 'none';
@@ -30,7 +28,6 @@ setTimeout(function() {
         modal.style.display = 'none';
     });
 
-});
     /*
 Challenge:
 1. Take control of the "modal-text" element. 
