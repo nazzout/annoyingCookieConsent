@@ -29,8 +29,14 @@
 			<div class="modal-inner" id="modal-inner">
 				<h2>We ❤️ Your Data!</h2>
 				<p class="modal-text" id="modal-text">We have a strict policy on tracking and spamming: we'll definitely track you, and we'll definitely spam you. To use this site, enter your name and email address and accept our ridiculous terms and conditions.</p>				
+				<div class="modal-inner-loading" style="display: none;">
+					<img src="images/loading.svg" class="loading" alt="Loading">
+					<p id="uploadText">
+						Uploading your data to the dark web...
+					</p>
+				</div>
 				<div class="modal-form" id="modal-form">
-					<form>
+					<form id="consent-form">
 						<label for="fullName">Name</label>
 						<input 
 						type="text" 
