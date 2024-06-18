@@ -6,7 +6,7 @@ const declineBtn = document.getElementById('decline-btn');
 
 setTimeout(function() {
     modal.style.display = 'inline';
-    }, 2000);
+    }, 1500);
 
     modalCloseBtn.addEventListener('click', function() {
         modal.style.display = 'none';
@@ -21,6 +21,11 @@ setTimeout(function() {
         </div>
         `;
         console.log('form submitted');
+        
+        // Use setTimeout to change the text after 1.5 seconds
+        setTimeout(function() {
+            document.getElementById('uploadText').innerText = 'Making the sale...';
+        }, 1500); // 1500 milliseconds = 1.5 seconds
     });
 
 
